@@ -25,4 +25,22 @@ yarn add include-media
 yarn add open-color
 ```
 
+## 조건부 스타일링을 편하게 할 수 있게 해줌
+```
+yarn add classnames
+```
 
+## 리액트에서 다양하고 예븐 아이콘을 사용할 수 있게 해줌
+```
+yarn add react-icons 
+
+사이트: https://react-icons.netlify.com/
+```
+
+## react 성능 최적화
+
+예를 들어 리스트 컴포넌트에서 스크롤되기 전에 보이지 않는 컴포넌트는 렌더링하지 않고 크기만 차지하게끔 해준다. 
+그리고 만약 스크롤 되면 해당 스크롤 위치에서 보여 주어야 할 컴포넌트를 자연스럽게 렌더링해준다.
+```
+yarn add react-virtualized
+```
