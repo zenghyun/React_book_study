@@ -44,3 +44,9 @@ yarn add react-icons
 ```
 yarn add react-virtualized
 ```
+
+## immer Library 
+구조가 복잡한 객체도 매우 쉽고 짧은 코드를 사용하여 불변성을 유지하면서 업데이트 해줄 수 있다.
+```
+yarn add immer
+```
