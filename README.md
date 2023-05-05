@@ -50,3 +50,15 @@ yarn add react-virtualized
 ```
 yarn add immer
 ```
+
+## react-router-dom 설치
+리액트 라우터는 클라이언트 사이드에서 이루어지는 라우팅을 아주 간단하게 구현할 수 있도록 해준다.
+```
+yarn add react-router-dom
+```
+
+## qs 
+쿼리 문자열을 객체로 변환해주는 라이브러리
+```
+yarn add qs
+```
