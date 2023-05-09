@@ -62,3 +62,13 @@ yarn add react-router-dom
 ```
 yarn add qs
 ```
+
+## axios
+axios는 현재 가장 많이 사용되고 있는 자바스크립트 HTTP 클라이언트입니다. 이 라이브러리의 특징은 HTTP 요청을 Proimise 기반으로 처리한다는 점입니다. 
+
+```
+yarn add axios
+```
+
+## redux-actions 
+redux-actions를 사용하면 액션 생성 함수를 더 짧은 코드로 작성할 수 있다.
