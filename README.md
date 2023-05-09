@@ -86,3 +86,6 @@ redux-sage는 제너레이터 함수 문법을 기반으로 비동기 작업을 
 ```
 yarn add redux-saga
 ```
+
+## Loadable Compoonents 
+Loadable Components는 코드 스플리팅을 편하게 하도록 도와주는 서드파티 라이브러리입니다. 이 라이브러리의 이점은 서버 사이드 렌더링을 지원한다는 것 입니다. (React.lazy와 Suspense는 아직 서버 사이드 렌더링을 지원하지 않습니다.)
