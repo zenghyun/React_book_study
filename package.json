@@ -1,0 +1,8 @@
+{
+  "name": "react_book",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/zenghyun/React_book_study.git",
+  "author": "zenghyun <pipo36@naver.com>",
+  "license": "MIT"
+}
