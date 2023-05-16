@@ -10,7 +10,8 @@ function App() {
   return (
     <>
     <Routes>
-      <Route element={<PostListPage />} path={['/@:username', '/']} exact />
+      <Route element={<PostListPage />} path='/@:username' exact />
+      <Route element={<PostListPage />} path='/' exact />
       <Route element={<LoginPage />} path="/login" />
       <Route element={<RegisterPage />} path="/register" />
       <Route element={<WritePage />} path="/write" />
