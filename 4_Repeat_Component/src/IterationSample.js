@@ -1,43 +1,46 @@
 import React, { useState } from "react";
 
 const IterationSample = () => {
-  const [names, setNames] = useState([
-    { id: 1, text: "눈사람" },
-    { id: 2, text: "얼음" },
-    { id: 3, text: "눈" },
-    { id: 4, text: "바람" },
+  const [lists, setLists] = useState([
+    {id: 1, title: '눈사람'},
+    {id: 2, title: '바다'},
+    {id: 3, title: '겨울'},
+    {id: 4, title: '눈'},
   ]);
 
-  const [nextId, setNextId] = useState(5);
-  const [inputText, setInputText] = useState("");
+  const [text, setText] = useState('');
+  const [id, setId] = useState(5);
 
-  const nameHandler = (e) => {
-    setInputText(e.target.value);
-  };
-
+  const onChange = e => {
+    setText(e.target.value);
+  }
+  
   const onClick = () => {
-    const nextNames = names.concat({
-      id: nextId,
-      text: inputText,
-    });
-    setNextId(nextId + 1);
-    setNames(nextNames);
-    setInputText("");
+    const newLists = lists.concat({id: id, title: text});
+    setLists(newLists);
+    setId(id + 1);
+    setText('');
   };
-
+  
   const onRemove = (id) => {
-    const nextNames = names.filter(name => name.id !== id);
-    setNames(nextNames);
+    const removeLists = lists.filter(list => list.id !== id);
+    setLists(removeLists);
   };
 
-  const nameList = names.map((name) => <li key={name.id} onDoubleClick={() => onRemove(name.id)}>{name.text}</li>);
-  return (
-    <>
-      <input type="text" onChange={nameHandler} value={inputText}></input>
-      <button onClick={onClick}>추가</button>
-      <ul>{nameList}</ul>
-    </>
-  );
+  const list = lists.map( list => <li key={list.id} onDoubleClick={() => onRemove(list.id)}>{list.title}</li>);
+
+  return (<>
+    <input 
+    type="text"
+    onChange={onChange}
+    value={text}
+    />
+
+    <button onClick={onClick}>확인</button>
+    <ul>
+      {list}
+    </ul>
+  </>);
 };
 
 export default IterationSample;
