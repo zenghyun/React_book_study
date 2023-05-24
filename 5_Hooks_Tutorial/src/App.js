@@ -4,7 +4,7 @@ import Counter from './Counter';
 import Counter2 from './Counter2';
 import Info from './Info';
 import './App.css';
-import Average from './Average';
+import Average2 from './Average2';
 
 function App() {
   const [visible, setVisible] = useState(false);
@@ -20,7 +20,7 @@ function App() {
     <Counter />
     {!visible && <Info />} 
     <Counter2 />
-    <Average />
+    <Average2 />
   </>
   );
 }
