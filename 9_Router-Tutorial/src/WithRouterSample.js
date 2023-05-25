@@ -9,11 +9,11 @@ const WithRouterSample = () => {
     return (
         <div>
             <h4>params</h4>
-            <textarea value={JSON.stringify(params)} readOnly/>
+            <textarea value={JSON.stringify(params, null, 2)} row={7} readOnly/>
             <h4>location</h4>
             <textarea value={JSON.stringify(location, null, 2)} readOnly/>
             <h4>navigate</h4>
-            <button onClick={() => navigate(-1)}>홈으로</button>
+            <button onClick={() => navigate('/')}>홈으로</button>
         </div>
     );
 };

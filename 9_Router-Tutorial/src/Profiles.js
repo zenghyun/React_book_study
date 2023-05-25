@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, Route, Routes } from "react-router-dom";
 import Profile from "./Profile";
-import WithRouterSample from "./WithRouterSample";
+
 
 const Profiles = () => {
     const style = {
@@ -26,7 +26,7 @@ const Profiles = () => {
         />
         <Route path=":username" element={<Profile />} />
       </Routes>
-      <WithRouterSample />
+     
     </div>
   );
 };

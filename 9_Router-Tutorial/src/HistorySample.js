@@ -5,7 +5,7 @@ function HistorySample() {
    const goBack = () => {
    const confirm = window.confirm('정말 떠나시겠어요?')
    if (confirm) {
-      navigate(0);
+      navigate(-1);
     }
   };
 

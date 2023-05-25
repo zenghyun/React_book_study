@@ -14,7 +14,7 @@ function App() {
     const { name, value } = e.target;
     setForm(
       produce(draft => {
-        draft[name] = value;
+        draft[name] = [value];
       })
     );
   },[]);
@@ -30,10 +30,9 @@ function App() {
       };
 
       // array에 새 항목 등록 
-      setData(
-        produce(draft => {
-          draft.array.push(info)
-        })
+      setData(produce( draft => {
+        draft.array.push(info);
+      })
       );
 
       // form 초기화
@@ -48,11 +47,9 @@ function App() {
     // 항목을 삭제하는 함수
     const onRemove = useCallback(
       id => {
-        setData(
-          produce(draft => {
-            draft.array.splice(draft.array.findIndex(info => info.id === id), 1)
-          })
-        );
+        setData(produce(draft => {
+          draft.array.splice(draft.array.findIndex(info => info.id === id), 1)
+        }));
       }
       ,[]);
 
